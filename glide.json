@@ -1,6 +1,6 @@
 {
   "name": "Date Range Checker",
-  "description": "Check if a current date is within a specified start and end date range.",
+  "description": "Checks if the current date is within a specified range.",
   "params": [
     {
       "name": "currentDate",
@@ -11,8 +11,8 @@
       "type": "date-time"
     },
     {
-      "name": "endDate",
-      "type": "date-time"
+    "name": "endDate",
+    "type": "date-time"
     }
   ],
   "result": {
