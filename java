@@ -1,8 +1,14 @@
-function isCurrentDateInRange(startDate, endDate) {
-    const currentTime = new Date();
-    const start = new Date(startDate);
-    const end = new Date(endDate);
+window.function = function (currentDate, startDate, endDate) {
+   
+    if (currentDate.value === undefined || startDate.value === undefined || endDate.value === undefined) {
+        return undefined;
+    }
 
-    return (currentTime >= start && currentTime <= end) ? 1 : 0;
+
+    const now = new Date(currentDate.value);
+    const start = new Date(startDate.value);
+    const end = new Date(endDate.value);
+
+   
+    return (now >= start && now <= end) ? true : false;
 }
-
